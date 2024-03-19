@@ -16,9 +16,9 @@ if (NOT DEFINED KHPCG_EXECSPACE)
   set(KHPCG_EXECSPACE Serial)
 endif()
 
-if (NOT DEFINED KHPCG_GSEIDEL)
-  message(WARNING "KHPCG_GSEIDEL not defined, defaulting Level. Choose one of {Color, Level, Inexact}")
-  set(KHPCG_GSEIDEL Level)
+if (NOT DEFINED KHPCG_SYMGS)
+  message(WARNING "KHPCG_SYMGS not defined, defaulting to Level. Choose one of {Color, Level, Inexact}")
+  set(KHPCG_SYMGS Level)
 endif()
 
 project(KokkosHPCG)
@@ -63,17 +63,17 @@ else()
 endif()
 message("Execution Space: ${KHPCG_EXECSPACE}")
 
-if(${KHPCG_GSEIDEL} STREQUAL "Color")
+if(${KHPCG_SYMGS} STREQUAL "Color")
   ADD_DEFINITIONS(-DSYMGS_Color)
-elseif(${KHPCG_GSEIDEL} STREQUAL "Level")
+elseif(${KHPCG_SYMGS} STREQUAL "Level")
   ADD_DEFINITIONS(-DSYMGS_LEVEL)
-elseif(${KHPCG_GSEIDEL} STREQUAL "Inexact")
+elseif(${KHPCG_SYMGS} STREQUAL "Inexact")
   ADD_DEFINITIONS(-DSYMGS_INEXACT)
 else()
-  message(FATAL_ERROR "Unknown KHPCG_GSEIDEL. Choose one of Color, Level or Inexact")
+  message(FATAL_ERROR "Unknown KHPCG_SYMGS. Choose one of Color, Level or Inexact")
   exit()
 endif()
-message("HPCG Gause Seidel: ${KHPCG_GSEIDEL}")
+message("HPCG Gause Seidel: ${KHPCG_SYMGS}")
 
 ADD_DEFINITIONS(-DKOKKOS_TEAM)
 
@@ -81,5 +81,3 @@ ADD_DEFINITIONS(-DKOKKOS_TEAM)
 include_directories("${Trilinos_PREFIX}/include")
 #This will run the cmakelists in the src directory. This is where I want things to compile.
 add_subdirectory(src)
-
-

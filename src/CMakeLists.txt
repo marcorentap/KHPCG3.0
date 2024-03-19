@@ -36,3 +36,4 @@ add_executable(KokkosHPCG.exe main.cpp)
 file(COPY ../hpcg.dat DESTINATION .)
 
 target_link_libraries(KokkosHPCG.exe kokkoshpcglib ${Trilinos_LIBRARIES} ${Trilinos_TPL_LIBRARIES})
+set_target_properties(KokkosHPCG.exe PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
