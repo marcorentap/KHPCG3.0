@@ -1,3 +1,10 @@
+CMake Keywords:
+
+KHPCG_EXECSPACE={OpenMP, Cuda, Serial (default)}
+KHPCG_GSEIDEL={Color, Inexact, Level (default)}
+
+---
+
 ###############################
 HPCG with Kokkos Implementation
 ###############################
