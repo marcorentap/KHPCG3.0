@@ -152,7 +152,7 @@ assert(x.localLength == A.localNumberOfColumns); // Make sure x contains space f
     Kokkos::parallel_for(team_policy(numberOfTeams / teamSizeMax + 1, teamSizeMax, vector_size),
       ColouredSweep(color_index_begin, color_index_end, localMatrix, colors_ind, r_values, x_values));
 
-    execution_space::fence();
+    execution_space().fence();
   }
   for(int i = numColors - 1; i >= 0; i--){
     int color_index_begin = host_colors_map(i);
@@ -160,7 +160,7 @@ assert(x.localLength == A.localNumberOfColumns); // Make sure x contains space f
     int numberOfTeams = color_index_end - color_index_begin;
     Kokkos::parallel_for(team_policy(numberOfTeams / teamSizeMax + 1, teamSizeMax, vector_size),
       ColouredSweep(color_index_begin, color_index_end, localMatrix, colors_ind, r_values, x_values));
-    execution_space::fence();
+    execution_space().fence();
   }
 #else
   local_int_t dummy = 0;

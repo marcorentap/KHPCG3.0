@@ -1,11 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
-
-#These next few lines are ripped from the trilinos demo almost exactly
-set(Trilinos_PREFIX
-"/usr/people/research/zathorson/trilinos_builds/trilinos_openMP/build")
-set(CMAKE_PREFIX_PATH ${Trilinos_PREFIX} ${CMAKE_PREFIX_PATH})
-
-message("Trilinos prefix: ${Trilinos_PREFIX}")
+cmake_minimum_required(VERSION 3.0)
 
 find_package(Trilinos REQUIRED)
 
@@ -14,12 +7,25 @@ set(CMAKE_CXX_COMPILER ${Trilinos_CXX_COMPILER})
 message("Compiler: ${CMAKE_CXX_COMPILER}")
 set(CMAKE_C_COMPILER ${Trilinos_C_COMPILER})
 set(CMAKE_Fortran_COMPILER ${Trilinos_Fortran_COMPILER})
-
-project(KokkosHPCG)
-
 set(CMAKE_CXX_FLAGS "${Trilinos_CXX_COMPILER_FLAGS} -pg")
 set(CMAKE_C_FLAGS  "${Trilinos_C_COMPILER_FLAGS} ${CMAKE_C_FLAGS}")
 set(CMAKE_Fortran_FLAGS  "${Trilinos_Fortran_COMPILER_FLAGS} ${CMAKE_Fortran_FLAGS}")
+
+if (NOT DEFINED KHPCG_EXECSPACE)
+  message(WARNING "KHPCG_EXECSPACE not defined, defaulting to Serial. Choose one of {OpenMP, Serial, Cuda}")
+  set(KHPCG_EXECSPACE Serial)
+endif()
+
+if (NOT DEFINED KHPCG_GSEIDEL)
+  message(WARNING "KHPCG_GSEIDEL not defined, defaulting Level. Choose one of {Color, Level, Inexact}")
+  set(KHPCG_GSEIDEL Level)
+endif()
+
+project(KokkosHPCG)
+
+if (${KHPCG_EXECSPACE} STREQUAL "OpenMP")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp")
+endif()
 
 # MPI check 
 MESSAGE("-- Checking if MPI is enabled in Trilinos:")
@@ -45,20 +51,32 @@ ELSE()
   message(FATAL_ERROR "Kokkos not found... CMake exiting")
 ENDIF()
 
-# Change this definition to specify where to execute the code.
-# -DHPCG_Kokkos_OpenMP
-# -DHPCG_Kokkos_Cuda
-# -DHPCG_Kokkos_Serial (Default)
-ADD_DEFINITIONS(-DHPCG_Kokkos_OpenMP)
+if(${KHPCG_EXECSPACE} STREQUAL "OpenMP")
+  ADD_DEFINITIONS(-DHPCG_Kokkos_OpenMP)
+elseif(${KHPCG_EXECSPACE} STREQUAL "Cuda")
+  ADD_DEFINITIONS(-DHPCG_Kokkos_Cuda)
+elseif(${KHPCG_EXECSPACE} STREQUAL "Serial")
+  ADD_DEFINITIONS(-DHPCG_Kokkos_Serial)
+else()
+  message(FATAL_ERROR "Unknown KHPCG_EXECSPACE. Choose one of OpenMP, Cuda or Serial")
+  exit()
+endif()
+message("Execution Space: ${KHPCG_EXECSPACE}")
+
+if(${KHPCG_GSEIDEL} STREQUAL "Color")
+  ADD_DEFINITIONS(-DSYMGS_Color)
+elseif(${KHPCG_GSEIDEL} STREQUAL "Level")
+  ADD_DEFINITIONS(-DSYMGS_LEVEL)
+elseif(${KHPCG_GSEIDEL} STREQUAL "Inexact")
+  ADD_DEFINITIONS(-DSYMGS_INEXACT)
+else()
+  message(FATAL_ERROR "Unknown KHPCG_GSEIDEL. Choose one of Color, Level or Inexact")
+  exit()
+endif()
+message("HPCG Gause Seidel: ${KHPCG_GSEIDEL}")
+
 ADD_DEFINITIONS(-DKOKKOS_TEAM)
-# Change this definition to specify which Gauss Seidel to use
-# -DSYMGS_COLOR Solve using graph Colouring. (Doesn't Produce valid results)
-# -DSYMGS_LEVEL Level solve.
-# -DSYMGS_INEXACT Jacobi Trisolve. (Only works if you use enough iterations
-#		for your problem size.)
-# Default is serial Gauss Seidel used in Vanilla HPCG
-# If nothing is specified the defualt serial Gauss Seidel will be used.
-ADD_DEFINITIONS(-DSYMGS_LEVEL)
+
 
 include_directories("${Trilinos_PREFIX}/include")
 #This will run the cmakelists in the src directory. This is where I want things to compile.
