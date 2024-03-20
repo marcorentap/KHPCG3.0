@@ -12,6 +12,7 @@ You need:
 There are two CMake Keywords:
 
 `KHPCG_EXECSPACE={OpenMP, Cuda, Serial (default)}` defines the execution space
+
 `KHPCG_SYMGS={Color, Inexact, Level (default)}` defines the Gause-Seidel implementation (SymGS)
 
 Example use:
