@@ -7,9 +7,12 @@ set(CMAKE_CXX_COMPILER ${Trilinos_CXX_COMPILER})
 message("Compiler: ${CMAKE_CXX_COMPILER}")
 set(CMAKE_C_COMPILER ${Trilinos_C_COMPILER})
 set(CMAKE_Fortran_COMPILER ${Trilinos_Fortran_COMPILER})
-set(CMAKE_CXX_FLAGS "${Trilinos_CXX_COMPILER_FLAGS} -pg")
+# THIS IS A HACK!
+# For some reason, the Trilinos CXX flag do not include -fopenmp
+# even when it's enabled
+set(CMAKE_CXX_FLAGS "${Trilinos_CXX_COMPILER_FLAGS} ${Trilinos_C_COMPILER_FLAGS} -pg")
 set(CMAKE_C_FLAGS  "${Trilinos_C_COMPILER_FLAGS} ${CMAKE_C_FLAGS}")
-set(CMAKE_Fortran_FLAGS  "${Trilinos_Fortran_COMPILER_FLAGS} ${CMAKE_Fortran_FLAGS}")
+set(CMAKE_Fortran_FLAGS  "${Trilinos_Fortran_COMPILER_FLAGS} ${Kokkos_Fortran_COMPILER_FLAGS} ${CMAKE_Fortran_FLAGS}")
 
 if (NOT DEFINED KHPCG_EXECSPACE)
   message(WARNING "KHPCG_EXECSPACE not defined, defaulting to Serial. Choose one of {OpenMP, Serial, Cuda}")
@@ -28,10 +31,6 @@ if (NOT DEFINED KHPCG_KOKKOS_TEAM)
 endif()
 
 project(KokkosHPCG)
-
-if (${KHPCG_EXECSPACE} STREQUAL "OpenMP")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp")
-endif()
 
 # MPI check 
 MESSAGE("-- Checking if MPI is enabled in Trilinos:")
