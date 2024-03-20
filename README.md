@@ -15,6 +15,8 @@ There are two CMake Keywords:
 
 `KHPCG_SYMGS={Color, Inexact, Level (default)}` defines the Gause-Seidel implementation (SymGS)
 
+`KHPCG_KOKKOS_TEAM={Off, On (default)}` defines whether Kokkos Team Policy should be used.
+
 Example use:
 
 ```
