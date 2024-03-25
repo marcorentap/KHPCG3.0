@@ -14,6 +14,11 @@ set(CMAKE_CXX_FLAGS "${Trilinos_CXX_COMPILER_FLAGS} ${Trilinos_C_COMPILER_FLAGS}
 set(CMAKE_C_FLAGS  "${Trilinos_C_COMPILER_FLAGS} ${CMAKE_C_FLAGS}")
 set(CMAKE_Fortran_FLAGS  "${Trilinos_Fortran_COMPILER_FLAGS} ${Kokkos_Fortran_COMPILER_FLAGS} ${CMAKE_Fortran_FLAGS}")
 
+if (CMAKE_BUILD_TYPE MATCHES DEBUG)
+  ADD_DEFINITIONS(-DDEBUG)
+  ADD_DEFINITIONS(-DHPCG_DEBUG)
+endif()
+
 if (NOT DEFINED KHPCG_EXECSPACE)
   message(WARNING "KHPCG_EXECSPACE not defined, defaulting to Serial. Choose one of {OpenMP, Serial, Cuda}")
   set(KHPCG_EXECSPACE Serial)
