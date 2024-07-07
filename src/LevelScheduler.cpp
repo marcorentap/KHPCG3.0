@@ -128,20 +128,20 @@ int levelSchedule(SparseMatrix & A){
 	f_lev_map = local_int_1d_type("f_lev_map", f_numberOfLevels+1);
 	f_lev_ind = local_int_1d_type("f_lev_ind", nrows);
 // Fill up f_lev_map to prepare for scan
-	Kokkos::parallel_for(f_numberOfLevels, fillColorsMap(f_lev_map, f_row_level));
+	Kokkos::parallel_for(f_numberOfLevels, 32, fillColorsMap(f_lev_map, f_row_level));
 // Do the parallel scan on f_lev_map
 	Kokkos::parallel_scan(f_numberOfLevels+1, mapScan(f_lev_map));
 // Fill our f_lev_ind now.
-	Kokkos::parallel_for(f_numberOfLevels, fillColorsInd(f_lev_ind, f_lev_map, f_row_level));
+	Kokkos::parallel_for(f_numberOfLevels, 32, fillColorsInd(f_lev_ind, f_lev_map, f_row_level));
 // Set up b_lev_map and b_lev_ind
 	b_lev_map = local_int_1d_type("b_lev_map", b_numberOfLevels+1);
 	b_lev_ind = local_int_1d_type("b_lev_ind", nrows);
 // Fill up b_lev_map to prepare for scan
-	Kokkos::parallel_for(b_numberOfLevels, fillColorsMap(b_lev_map, b_row_level));
+	Kokkos::parallel_for(b_numberOfLevels, 32, fillColorsMap(b_lev_map, b_row_level));
 // Do the parallel scan on f_lev_map
 	Kokkos::parallel_scan(b_numberOfLevels+1, mapScan(b_lev_map));
 // Fill our b_lev_ind now.
-	Kokkos::parallel_for(b_numberOfLevels, fillColorsInd(b_lev_ind, b_lev_map, b_row_level));
+	Kokkos::parallel_for(b_numberOfLevels, 32, fillColorsInd(b_lev_ind, b_lev_map, b_row_level));
 
 	assert(f_lev_map(f_numberOfLevels) == A.localNumberOfRows);
 

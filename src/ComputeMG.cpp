@@ -110,7 +110,7 @@ int ComputeRestriction(const SparseMatrix & A, const Vector & rf){
 	double_1d_type rfv = rfv_Optimized->values;
 	local_int_t nc = A.mgData->rc->localLength;
 
-	Kokkos::parallel_for(nc, RestrictionFunctor(Axfv, rfv, rcv, f2c));
+	Kokkos::parallel_for(nc, 19, RestrictionFunctor(Axfv, rfv, rcv, f2c));
 	return 0;
 }
 
@@ -124,6 +124,6 @@ int ComputeProlongation(const SparseMatrix &Af, Vector & xf){
 	double_1d_type xfv = xfv_Optimized->values;
 	local_int_t nc = Af.mgData->rc->localLength;
 
-	Kokkos::parallel_for(nc, ProlongationFunctor(xfv, xcv, f2c));
+	Kokkos::parallel_for(nc, 15, ProlongationFunctor(xfv, xcv, f2c));
 	return 0;
 }

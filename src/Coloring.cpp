@@ -284,11 +284,11 @@ int doColoring(SparseMatrix & A){
 	local_int_1d_type colors_map("Colors Map", numColors + 1);
 	local_int_1d_type colors_ind("Colors Idx", A.localNumberOfRows);
 // Fill colors_map so that colors_map(i) contains the number of entries with color i
-	Kokkos::parallel_for(numColors, fillColorsMap(colors_map, colors));
+	Kokkos::parallel_for(numColors, 32, fillColorsMap(colors_map, colors));
 // Scan colors_map to finish filling out the map.
 	Kokkos::parallel_scan(numColors + 1, mapScan(colors_map));
 // Use colors_map to fill fill out colors_ind.
-	Kokkos::parallel_for(numColors, fillColorsInd(colors_ind, colors_map, colors));
+	Kokkos::parallel_for(numColors, 32, fillColorsInd(colors_ind, colors_map, colors));
 
 // Assign everything back to A now.
 	A_Optimized->colors_map = colors_map;

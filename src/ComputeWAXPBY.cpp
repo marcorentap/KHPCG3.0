@@ -110,7 +110,7 @@ int ComputeWAXPBY(const local_int_t n, const double alpha, const Vector & x,
   double_1d_type w_values = w_optimized->values;
 
   if(alpha == 1.0)
-  	Kokkos::parallel_for(n, AlphaOne(x_values, y_values, w_values, beta));
+  	Kokkos::parallel_for(n, 27, AlphaOne(x_values, y_values, w_values, beta));
   else if(beta == 1.0)
   	Kokkos::parallel_for(n, BetaOne(x_values, y_values, w_values, alpha));
   else
