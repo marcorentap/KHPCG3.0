@@ -124,6 +124,6 @@ int ComputeProlongation(const SparseMatrix &Af, Vector & xf){
 	double_1d_type xfv = xfv_Optimized->values;
 	local_int_t nc = Af.mgData->rc->localLength;
 
-	Kokkos::parallel_for(nc, ProlongationFunctor(xfv, xcv, f2c));
+	Kokkos::parallel_for(nc, 15, ProlongationFunctor(xfv, xcv, f2c));
 	return 0;
 }
