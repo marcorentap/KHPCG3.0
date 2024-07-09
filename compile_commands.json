@@ -1,0 +1,266 @@
+[
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/CG.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/CG.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/CG.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/CG.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/CG_ref.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/CG_ref.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/CG_ref.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/CG_ref.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/CheckAspectRatio.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/CheckAspectRatio.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/CheckAspectRatio.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/CheckAspectRatio.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/CheckProblem.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/CheckProblem.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/CheckProblem.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/CheckProblem.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeDotProduct.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeDotProduct.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeDotProduct.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeDotProduct.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeDotProduct_ref.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeDotProduct_ref.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeDotProduct_ref.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeDotProduct_ref.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeMG.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeMG.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeMG.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeMG.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeMG_ref.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeMG_ref.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeMG_ref.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeMG_ref.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeOptimalShapeXYZ.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeOptimalShapeXYZ.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeOptimalShapeXYZ.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeOptimalShapeXYZ.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeProlongation_ref.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeProlongation_ref.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeProlongation_ref.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeProlongation_ref.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeResidual.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeResidual.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeResidual.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeResidual.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeRestriction_ref.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeRestriction_ref.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeRestriction_ref.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeRestriction_ref.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeSPMV.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeSPMV.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeSPMV.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeSPMV.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeSPMV_ref.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeSPMV_ref.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeSPMV_ref.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeSPMV_ref.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeSYMGS.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeSYMGS.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeSYMGS.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeSYMGS.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeSYMGS_ref.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeSYMGS_ref.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeSYMGS_ref.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeSYMGS_ref.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeWAXPBY.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeWAXPBY.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeWAXPBY.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeWAXPBY.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ComputeWAXPBY_ref.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ComputeWAXPBY_ref.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ComputeWAXPBY_ref.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ComputeWAXPBY_ref.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ExchangeHalo.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ExchangeHalo.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ExchangeHalo.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ExchangeHalo.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/finalize.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/finalize.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/finalize.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/finalize.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/GenerateCoarseProblem.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/GenerateCoarseProblem.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/GenerateCoarseProblem.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/GenerateCoarseProblem.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/GenerateGeometry.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/GenerateGeometry.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/GenerateGeometry.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/GenerateGeometry.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/GenerateProblem.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/GenerateProblem.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/GenerateProblem.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/GenerateProblem.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/GenerateProblem_ref.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/GenerateProblem_ref.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/GenerateProblem_ref.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/GenerateProblem_ref.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/init.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/init.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/init.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/init.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/MixedBaseCounter.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/MixedBaseCounter.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/MixedBaseCounter.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/MixedBaseCounter.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/mytimer.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/mytimer.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/mytimer.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/mytimer.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/OptimizeProblem.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/OptimizeProblem.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/OptimizeProblem.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/OptimizeProblem.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ReadHpcgDat.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ReadHpcgDat.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ReadHpcgDat.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ReadHpcgDat.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ReportResults.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ReportResults.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ReportResults.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ReportResults.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/SetupHalo.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/SetupHalo.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/SetupHalo.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/SetupHalo.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/SetupHalo_ref.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/SetupHalo_ref.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/SetupHalo_ref.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/SetupHalo_ref.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/TestCG.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/TestCG.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/TestCG.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/TestCG.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/TestNorms.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/TestNorms.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/TestNorms.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/TestNorms.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/TestSymmetry.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/TestSymmetry.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/TestSymmetry.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/TestSymmetry.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/WriteProblem.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/WriteProblem.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/WriteProblem.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/WriteProblem.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/YAML_Doc.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/YAML_Doc.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/YAML_Doc.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/YAML_Doc.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/YAML_Element.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/YAML_Element.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/YAML_Element.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/YAML_Element.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/Coloring.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/Coloring.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/Coloring.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/Coloring.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ColorSYMGS.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ColorSYMGS.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ColorSYMGS.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ColorSYMGS.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/ColorReorder.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/ColorReorder.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/ColorReorder.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/ColorReorder.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/LevelScheduler.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/LevelScheduler.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/LevelScheduler.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/LevelScheduler.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -o CMakeFiles/kokkoshpcglib.dir/LevelSYMGS.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/LevelSYMGS.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/LevelSYMGS.cpp",
+  "output": "src/CMakeFiles/kokkoshpcglib.dir/LevelSYMGS.cpp.o"
+},
+{
+  "directory": "/home/marcorentap/projects/KHPCG3.0/build/src",
+  "command": "/usr/lib/ccache/clang++ -DDEBUG -DHPCG_DEBUG -DHPCG_Kokkos_OpenMP -DHPCG_NO_MPI -DKOKKOS_DEPENDENCE -DSYMGS_LEVEL -I/include -I/home/marcorentap/projects/KHPCG3.0/src/. -I/home/marcorentap/projects/KHPCG3.0/src/./src_subdirTBD    -O2 -g -DNDEBUG  -fopenmp=libomp -O2 -g -DNDEBUG -pg -g -fopenmp=libomp -o CMakeFiles/KokkosHPCG.exe.dir/main.cpp.o -c /home/marcorentap/projects/KHPCG3.0/src/main.cpp",
+  "file": "/home/marcorentap/projects/KHPCG3.0/src/main.cpp",
+  "output": "src/CMakeFiles/KokkosHPCG.exe.dir/main.cpp.o"
+}
+]

@@ -1,3 +1,4 @@
+#include <omp.h>
 #ifdef SYMGS_LEVEL
 #include "LevelSYMGS.hpp"
 
@@ -134,12 +135,16 @@ assert(x.localLength == A.localNumberOfColumns); // Make sure x contains space f
   for(int i = 0; i < f_numLevels; i++){
     int start = f_lev_map(i);
     int end = f_lev_map(i+1);
-    Kokkos::parallel_for(end - start, LeveledSweep(start, f_lev_ind, localMatrix, r_values, x_values, matrixDiagonal));
+    int work_count  = end - start;
+    int num_threads = work_count < omp_get_max_threads() ? work_count : omp_get_max_threads();
+    Kokkos::parallel_for(work_count, num_threads, LeveledSweep(start, f_lev_ind, localMatrix, r_values, x_values, matrixDiagonal));
   }
   for(int i = 0; i < b_numLevels; i++){
     int start = b_lev_map(i);
     int end = b_lev_map(i+1);
-    Kokkos::parallel_for(end - start, LeveledSweep(start, b_lev_ind, localMatrix, r_values, x_values, matrixDiagonal));
+    int work_count  = end - start;
+    int num_threads = work_count < omp_get_max_threads() ? work_count : omp_get_max_threads();
+    Kokkos::parallel_for(work_count, num_threads, LeveledSweep(start, b_lev_ind, localMatrix, r_values, x_values, matrixDiagonal));
   }
 #endif
 
